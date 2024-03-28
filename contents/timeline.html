@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--Elena Yarkova, Project for DSIGN161-23B-->
+<html lang="en" id="timeline">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Book timeline</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+  <body>
+
+    <!--Rightside content--> 
+    <div class="container">
+      <div class="content">
+        <!-- Left side of the content-->
+        <div class="content-left">
+          <h1>Book timeline</h1>
+          <h3>Press the text below to see animation</h3>
+          <ul class="timeline">
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">1. Basil Hallward paints a portrait of Dorian Gray. Dorian is introduced to Lord Henry Wotton</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">2. Dorian wishes for eternal youth; to sell his soul and have the painting age instead of him</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">3. Dorian meets Sybil Vane, falls in love, asks her to marry him</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">4. Dorian takes Basil and Harry (Lord Henry) to meet Sybil</h4>
+                </div>
+              </div>
+            </li>        
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">5. Sybil acts terribly; Dorian is disappointed and calls off their marriage</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content" >
+                <div class="details" onclick="startAnimation()">
+                  <h4 class="status-title">6. Sybil commits suicide. (look at the MAP) </h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">7. Dorian learns that his wish has come true; the painting gains a sneer</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">8. Basil confesses his admiration for Dorian</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">9. Dorian becomes influenced by a book that was given to him from Harry and lives his life according to the novel</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">10. 18 years later, Basil confronts Dorian about his sinful life choices</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">11. Dorian shows Basil the painting and blames him for his very acts; Dorian kills Basil</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">12. Dorian is approached by Sybil's brother, James, with the intention of killing Dorian; Dorian talks James out of it by telling him that he is too young to have known Sybil</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details" onclick="startSecondAnimation()">
+                  <h4 class="status-title">13. James is accidentally shot by a hunter. (look at the MAP) </h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">          
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">14. Dorian decides to be "good" from then on, however, it does not reverse his original wish, but makes the portrait even uglier</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list"> 
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">15. Dorian stabs the painting and in return kills himself</h4>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="list-content">
+                <div class="details">
+                  <h4 class="status-title">16. The painting returns to its original, beautiful state</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-right">
+          <!-- Right side content -->
+
+          <div id="mapArea" class="image-container">
+            <img src="../images/map.jpg" class="mapArea" width="500" alt="Map" id="map">
+            <img src="../images/dead.svg" id="marker" alt="Skull icon">
+            <img src="../images/dead.svg" id="marker2" alt="Skull icon">
+          </div>
+          <div id="image-container" class="image-container">
+            <div class="young-image">
+              <img src="../images/young.png" width="330" alt="Young Dorian Gray" id="youngImage">
+            </div>  
+            <div class="old-image">
+              <img src="../images/old.jpg"  width="330" alt="Old Dorian Gray" id="oldImage">
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      <!--Leftside content-->
+      <div class="side-menu">
+        <div class="menuheader">
+          <p><a href="../index.html">Back to Home page</a></p>
+          <h3><a href="../contents/tableofcontents.html">Table of Contents</a></h3>
+        </div>
+        <p style="color:chocolate">Book timeline</p>
+        <p><a href="../contents/processjournal.html">Process Journal</a></p>
+        <p><a href="../contents/about.html">About the book</a></p>
+        <p><a href="../contents/preface.html">Preface</a></p>
+        <p><a href="../contents/chapter1.html">Chapter I.</a></p>
+        <p><a href="../contents/chapter2.html">Chapter II.</a></p>
+        <p>Chapter III.</p>
+        <p>Chapter IV.</p>
+        <p>Chapter V.</p>
+        <p>Chapter VI.</p>
+        <p>Chapter VII.</p>
+        <p>Chapter VIII.</p>
+        <p>Chapter IX.</p>
+        <p>Chapter X.</p>
+        <p>Chapter XI.</p>
+        <p>Chapter XII.</p>
+        <p>Chapter XIII.</p>
+        <p>Chapter XIV.</p>
+        <p>Chapter XV.</p>
+        <p>Chapter XVI.</p>
+        <p>Chapter XVII.</p>
+        <p>Chapter XVIII.</p>
+        <p>Chapter XIX.</p>
+        <p>Chapter XX.</p>
+      </div>
+
+      <!--Bottom Navigation--> 
+      <div class="Navi">
+        <!--Navigation left--> 
+        <div class="left">
+          <div class="icon-with-text">
+            <a href="../contents/tableofcontents.html">
+              <img class="icon" src="../images/back.png" width="30" alt="Previous page">
+            </a>
+              <span class="icon-text">Previous Page (Table of contents)</span>
+          </div>
+        </div>
+
+        <!--Navigation bar--> 
+        <div class="progress-container">
+          <div class="progress-bar" id="my-progress-bar"></div>
+        </div>
+        <script src="../script.js"></script>
+
+        <!--Navigation right-->
+        <div class="right">
+          <div class="icon-with-text">
+            <span class="icon-text">Next Page (Process Journal)</span>
+            <a href="../contents/processjournal.html">
+            <img class="icon" src="../images/forward.png" width="30" alt="Next page">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>

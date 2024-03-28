@@ -1,0 +1,484 @@
+/*Elena Yarkova, Project Checkpoint, DSIGN161-23B*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Oswald:wght@500&display=swap');
+
+/* Apply background color to all website */
+html {
+  background-color: #E3D5CC;
+}
+/*GRIDS*/
+.container {  
+  display: grid;
+  grid-template-columns: 0.6fr 1.8fr 1fr;
+  grid-template-rows: 0.3fr 3fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.content {  
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  grid-template-rows: 0.5fr 2.2fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: 1 / 2 / 3 / 4;
+}
+
+.image-container { 
+  grid-area: 1 / 2 / 4 / 3; 
+}
+.overlay-header { 
+  grid-area: 1 / 2 / 2 / 3; 
+}
+.overlay-text { 
+  grid-area: 3 / 2 / 4 / 3; 
+}
+.side-menu { 
+  border: 1px solid #333; /* Add a border */
+  grid-area: 1 / 1 / 4 / 2; 
+}
+.Navi {  
+  border: 1px solid #333; /* Add a border */
+
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.7fr 1.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ". . ."
+  "left Navibar right"
+  ". . .";
+  grid-area: 3 / 2 / 4 / 4;
+}
+.Navibar { 
+  grid-area: Navibar; 
+}
+.left { grid-area: left; }
+
+.right { grid-area: right; }
+
+.menuheader { 
+  grid-area: 1 / 1 / 2 / 2; }
+
+
+/*GENERAL TEXT STYLES*/
+  h1,h2 {
+      font-family: 'Fleur De Leah', cursive;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      color: black;
+      text-align: center;
+  }
+  h1{
+      font-size: 36pt;
+  }
+  h2{
+      font-size: 28pt;
+  }
+  h3,p {
+      font-family: 'Arial', sans-serif;
+      font-style: normal;
+      font-variant: normal;
+      margin-left: 5%;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    }
+  p {
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    }
+
+
+/* Left menu styles */
+  .side-menu{
+    background-color: #B0A59E;
+  }
+
+  .menuheader{
+    background-color: #634B3C;
+   }
+
+/* Right content styles */
+
+/* Image container styles */
+  .image-container{
+    justify-content: center;
+    align-items: center;
+  }
+    
+  
+/* Navigation section styles */
+.Navi {
+  background-color: #e8af8b86;
+  position: fixed;
+  bottom: 5%;
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  max-width: 60%;
+  margin-left: 30%;
+  margin-right: 10%;
+  justify-content: space-between; 
+}
+
+.icon-with-text {
+  display: flex;
+  align-items: center; 
+}
+
+a {
+  color: #333; /* Link color */
+}
+
+.icon {
+  width: 30px;
+  height: auto;
+  transition: transform 0.2s;
+  margin-right: 5px;/* Margin between icon and text */
+  margin-left: 5px; /* Margin between icon and text */
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.right .left {
+  display: flex;
+  justify-content: space-between; /* Distribute icons evenly between left and right */
+  align-items: center; /* Vertically center the icons */
+  width: 100%;
+}
+
+.left {
+  grid-area: left;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  grid-area: right;
+  display: flex;
+  align-items: center;
+}
+
+/*PROGRESS BAR STYLES*/
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #723505; 
+}
+
+
+/*MENU HEADER STYLES*/
+.menuheader a {
+  background-color: #634B3C; 
+  display: block; 
+  padding: 10px ; 
+  color: white; 
+  text-decoration: none; 
+}
+
+.menuheader h3 {
+  background-color: #634B3C; 
+  display: block; 
+  padding: 0px ; 
+  color: white; 
+  text-align: center; 
+}
+
+
+/*TIMELINE PAGE STYLES*/
+
+/* Timeline css */
+@keyframes fill-color {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes fill-color1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 50%;
+  }
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    color: rgba(black, 0.4);
+  }
+  100% {
+    color: rgba(black, 1);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline {
+  padding: 0;
+  list-style: none;
+  margin: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.details {
+  margin-left: 48px;
+  border-bottom: 1px solid #f2f2f2;
+  min-height: 85px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list,
+.list-content {
+  position: relative;
+  width: 100%;
+}
+
+.list-content::before,
+.list-content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: 0.2s all linear;
+  width: 0.714rem;
+  height: 0.714rem;
+  border-radius: 50%;
+  background-color: gray;
+  top: 50%;
+  z-index: 3;
+  margin-left: 0.35rem;
+  margin-top: -8px;
+}
+
+.list-content::after {
+  z-index: 2;
+}
+
+.list {
+  position: relative;
+  width: 100%;
+}
+
+.list.active .list-content:before {
+  transform: scale(0);
+  width: 17px;
+  height: 17px;
+  border: 2px solid white;
+  background-color: #723505;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 9px 7px;
+  margin-left: 0;
+  margin-top: -8px;
+  animation: scaleup 0.4s forwards;
+}
+
+.list:before,
+.list:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: 0.2s all linear;
+  width: 0.214rem;
+  margin-left: 0.6rem;
+}
+
+.list:before {
+  background: #f2f2f2;
+  height: 100%;
+}
+
+.list:after {
+  background: #723505;
+  height: 0;
+  z-index: 1;
+}
+
+.list:before {
+  top: -50%;
+}
+
+.list.active:after {
+  top: 0;
+  animation: fill-color 0.4s forwards;
+}
+
+.list:last-child:after {
+  display: none;
+}
+
+.list:last-child.active:after {
+  display: block;
+  bottom: 50%;
+  animation: fill-color1 0.4s forwards;
+}
+
+.list:last-child .details {
+  border-bottom: none;
+}
+
+.list:first-child:before {
+  display: none;
+}
+
+#timeline .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#timeline .content-left {
+  width: 70%; /* width of the left side of the content (list) */
+}
+
+#timeline .content-right {
+  width: 30%; /* width of the right side of the content (map and images) */
+}
+
+#timeline .image-container .mapArea {
+  position: relative;
+}
+
+#timeline .mapArea, .young-image, .old-image {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+}
+
+/*Set z-index so that young-image lies above old-image*/
+.young-image { 
+  z-index: 0; 
+}
+.old-image {
+  z-index: -1; 
+}
+
+/*MAP ANIMATION STYLES*/
+#mapArea {
+  margin-top: 150px;
+  position: relative; 
+
+}
+#buttonArea, button {
+   padding: 1em;
+}
+button {
+   font-size: 1.2em;
+}
+      
+@keyframes journey{
+   0% {
+        top: 20%;
+        left: 35%;
+   }
+   100% {
+       top: 55%;
+       left: 46%;
+   }
+}
+
+#marker {
+   visibility: hidden;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   z-index: 99; 
+   top: 20%;
+   left: 35%;
+   /* animation */
+   animation: journey 6s;
+   animation-fill-mode: forwards; 
+}
+
+@keyframes journey2{
+   0% {
+       top: 20%;
+       left: 75%;
+   }
+   100% {
+       top: 68%;
+       left: 63%;
+   }
+}
+#marker2 {
+   visibility: hidden;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   z-index: 100; 
+   top: 20%;
+   left: 75%;
+}
+.moveMe {
+   animation: journey2 3s;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+   }
+
+/*PROCESS JOURNAL PAGE STYLES*/
+
+   #ProcessJournal .container {  
+    display: grid;
+    grid-template-columns: 0.6fr 1.8fr 1fr;
+    grid-template-rows: 0.3fr 3fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+
+  #ProcessJournal .content {  
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2.2fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: 1 / 2 / 3 / 4;
+  }
+
+  table, th, td {
+    border: 1px solid;
+  }
