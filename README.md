@@ -1,6 +1,25 @@
-# Project Information
+# Project Overview
 
-add later
+The goal of this project was to create an immersive and interactive book reader website for the classic novel, showcasing the book's themes and atmosphere through design and animations.
+
+## Process Highlights
+
+- Chose the book based on its intriguing themes and genre, considering their impact on the website's design.
+- Designed the layout using sketches, gathered resources, and built the HTML structure.
+- Selected a monochromatic color scheme and fonts to create a vintage book feel.
+- Implemented a reading progress bar, timeline animation, and interactive portraits using code from various sources.
+- Created a grid layout for improved content organization and element positioning.
+- Debugged and validated code, ensuring proper functionality and documentation.
+
+## Challenges and Solutions
+
+- Replaced the initial cover image with a clean one based on feedback.
+- Removed the separate bottom section and horizontal navigation bar due to implementation difficulties, opting for a top progress bar and side menu instead.
+- Resolved issues with map animation and portrait adaptivity by modifying the layout and triggering events.
+
+## External Resources
+
+The project utilized resources from Stack Overflow, COMPX161 course material, OpenArt AI, Adobe Color, Layoutit, Unsplash, The Noun Project, Wikipedia, YouTube tutorials, and Google Fonts.
 
 ## Libraries/Frameworks/Modules
 
